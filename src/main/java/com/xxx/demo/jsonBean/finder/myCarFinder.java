@@ -1,5 +1,8 @@
 package com.xxx.demo.jsonBean.finder;
-
+/**
+ * 远程寻车
+ * @author guo.zj
+ */
 public class myCarFinder {
 
      Double longitude;
