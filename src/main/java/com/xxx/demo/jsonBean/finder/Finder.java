@@ -1,4 +1,4 @@
-package com.xxx.demo.models.sys;
+package com.xxx.demo.jsonBean.finder;
 
 import java.util.Date;
 
