@@ -1,8 +1,8 @@
 package com.xxx.demo.models.sys;
 
 /**
- * 用户bean
- * @author leo
+ * 远程寻车
+ * @author guo.zj
  */
 public class VehicleCtrl {
     private String type;
