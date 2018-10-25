@@ -3,8 +3,8 @@ package com.xxx.demo.jsonBean.finder;
 import java.util.Date;
 
 /**
- * 用户bean
- * @author leo
+ * 远程寻车
+ * @author guo.zj
  */
 public class Finder {
     private String type;
