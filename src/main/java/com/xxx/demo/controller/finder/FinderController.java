@@ -1,7 +1,7 @@
 package com.xxx.demo.controller.finder;
 
 import com.alibaba.fastjson.JSONObject;
-import com.xxx.demo.models.sys.RequestParameters;
+import com.xxx.demo.jsonBean.remote.RequestParameters;
 import com.xxx.demo.services.finder.FinderService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
