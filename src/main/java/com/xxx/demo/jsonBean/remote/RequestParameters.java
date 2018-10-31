@@ -1,8 +1,7 @@
 package com.xxx.demo.jsonBean.remote;
 
-import com.xxx.demo.models.sys.Finder;
 
-;
+import com.xxx.demo.jsonBean.finder.Finder;
 
 /**
  * 请求bean

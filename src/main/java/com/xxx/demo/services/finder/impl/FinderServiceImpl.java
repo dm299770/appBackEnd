@@ -4,7 +4,7 @@ package com.xxx.demo.services.finder.impl;
 
 import com.alibaba.fastjson.JSONObject;
 import com.xxx.demo.jsonBean.finder.myCarFinder;
-import com.xxx.demo.models.sys.RequestParameters;
+import com.xxx.demo.jsonBean.remote.RequestParameters;
 import com.xxx.demo.services.finder.FinderService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -59,42 +59,5 @@ public class FinderServiceImpl implements FinderService {
         return jsonObject;
     }
 
-    /**
-     * @description:车锁接口实现
-     * @author:@guo.zj
-     */
-    @Override
-    public JSONObject safelock(RequestParameters data) {
-        List<Map<String, Double>> Location =new ArrayList<Map<String, Double>>();
-        myCarFinder mycarFinder=new myCarFinder();
-        JSONObject jsonObject = new JSONObject();
-        try {
-            logger.info("请求体:" + data);
-            //Finder finder = JSON.parseObject(request, RequestParameters.class).getData();
-            String vin = data.getData().getVin();
-            String serviceType = data.getData().getType();
-            //demo用  卡梅隆落地删除
-            Thread.currentThread().sleep(2000);//毫秒
-            if(vin==null||"".equals(vin)){
-                jsonObject.put("status", 201);
-                jsonObject.put("msg", "传入参数有误");
-            }else if ("APP".equals(serviceType) && "NISSAN0000000000".equals(vin)) {
-                jsonObject.put("status", 200);
-                jsonObject.put("msg", "success");
-                logger.info("返回的json:{}", jsonObject);
-            } else {
-                jsonObject.put("status", 400);
-                jsonObject.put("msg", "failed");
-                logger.info("返回的json:{}",jsonObject);
-            }
-        }catch(Exception e) {
-            e.printStackTrace();
-            logger.error("系统内部错误!");
-            jsonObject.put("status",500);
-            jsonObject.put("msg", "服务器处理失败，系统内部错误");
-            jsonObject.put("data","");
-        }
-        return jsonObject;
-    }
 
 }

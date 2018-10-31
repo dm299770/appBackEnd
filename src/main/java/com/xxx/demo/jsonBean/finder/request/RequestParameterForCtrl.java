@@ -1,4 +1,6 @@
-package com.xxx.demo.models.sys;
+package com.xxx.demo.jsonBean.finder.request;
+
+import com.xxx.demo.jsonBean.remote.VehicleCtrl;
 
 /**
  * 请求bean

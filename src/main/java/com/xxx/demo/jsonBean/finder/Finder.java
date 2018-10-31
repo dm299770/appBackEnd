@@ -9,7 +9,7 @@ import java.util.Date;
 public class Finder {
     private String type;
     private String vin;
-
+   //属性get（）set（）方法
     public String getType() {
         return type;
     }

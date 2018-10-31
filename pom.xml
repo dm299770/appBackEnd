@@ -5,8 +5,8 @@
 	<groupId>appBackEnd</groupId>
 	<artifactId>appBackEnd</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
-	<name>demo</name>
+	<packaging>jar</packaging>
+	<name>appBackEnd</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>

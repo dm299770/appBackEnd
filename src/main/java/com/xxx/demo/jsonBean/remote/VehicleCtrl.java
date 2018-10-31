@@ -1,4 +1,4 @@
-package com.xxx.demo.models.sys;
+package com.xxx.demo.jsonBean.remote;
 
 /**
  * 远程寻车
