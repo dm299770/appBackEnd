@@ -4,7 +4,10 @@ package com.xxx.demo.services.vehicleState.impl;
 import com.alibaba.fastjson.JSONObject;
 import com.xxx.demo.jsonBean.finder.myCarFinder;
 import com.xxx.demo.jsonBean.remote.RequestParameters;
+<<<<<<< HEAD
 import com.xxx.demo.jsonBean.remote.remoteRequestParmmeter.DeleteDataRequestParameter;
+=======
+>>>>>>> 6726497bc8b42a17bb44cbf5e0d58416139fdeb6
 import com.xxx.demo.jsonBean.vehiclestate.VehicleState;
 import com.xxx.demo.services.finder.FinderService;
 import com.xxx.demo.services.vehicleState.VehicleStateService;
@@ -43,7 +46,11 @@ public class VehicleStateServiceImpl implements VehicleStateService {
         String tire="";
         try {
             logger.info("请求体:" + data);
+<<<<<<< HEAD
             //Finder finder = JSON.parseObject(request, FinderRequestParameter.class).getData();
+=======
+            //Finder finder = JSON.parseObject(request, RequestParameters.class).getData();
+>>>>>>> 6726497bc8b42a17bb44cbf5e0d58416139fdeb6
             String vin = data.getData().getVin();
             String serviceType = data.getData().getType();
             if(vin==null||"".equals(vin)){
@@ -110,6 +117,7 @@ public class VehicleStateServiceImpl implements VehicleStateService {
     }
 
 
+<<<<<<< HEAD
 
     @Override
     public JSONObject deletedata(DeleteDataRequestParameter data) {
@@ -149,4 +157,6 @@ public class VehicleStateServiceImpl implements VehicleStateService {
     }
 
 
+=======
+>>>>>>> 6726497bc8b42a17bb44cbf5e0d58416139fdeb6
 }

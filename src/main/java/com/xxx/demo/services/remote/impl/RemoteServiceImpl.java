@@ -4,7 +4,12 @@ package com.xxx.demo.services.remote.impl;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.xxx.demo.jsonBean.finder.request.RequestParameterForCtrl;
+<<<<<<< HEAD
 import com.xxx.demo.jsonBean.remote.remotemodel.Vehiclemarks;
+=======
+import com.xxx.demo.jsonBean.remote.Vehiclemarks;
+import com.xxx.demo.models.remote.SystemState;
+>>>>>>> 6726497bc8b42a17bb44cbf5e0d58416139fdeb6
 import com.xxx.demo.services.remote.RemoteService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,7 +32,11 @@ public class RemoteServiceImpl implements RemoteService {
         JSONObject jsonObject = new JSONObject();
         try {
             logger.info("请求体:" + data);
+<<<<<<< HEAD
             //Finder finder = JSON.parseObject(request, FinderRequestParameter.class).getData();
+=======
+            //Finder finder = JSON.parseObject(request, RequestParameters.class).getData();
+>>>>>>> 6726497bc8b42a17bb44cbf5e0d58416139fdeb6
             String vin = data.getData().getVin();
             String serviceType = data.getData().getType();
             String controltype=data.getData().getControltype();

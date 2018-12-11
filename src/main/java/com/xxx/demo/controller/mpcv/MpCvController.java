@@ -20,7 +20,10 @@ import java.util.UUID;
  */
 @RestController
 @RequestMapping({"/mpCv"})
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6726497bc8b42a17bb44cbf5e0d58416139fdeb6
 public class MpCvController {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
     @Autowired

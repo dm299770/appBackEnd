@@ -17,6 +17,9 @@ public interface MpCvRepository
      * @param id 抄表记录主键
      * @return
      */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6726497bc8b42a17bb44cbf5e0d58416139fdeb6
     MpCv findById(String id);
 }

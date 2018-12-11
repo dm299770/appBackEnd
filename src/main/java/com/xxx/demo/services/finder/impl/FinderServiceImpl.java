@@ -27,7 +27,11 @@ public class FinderServiceImpl implements FinderService {
         JSONObject jsonObject = new JSONObject();
         try {
             logger.info("请求体:" + data);
+<<<<<<< HEAD
             //Finder finder = JSON.parseObject(request, FinderRequestParameter.class).getData();
+=======
+            //Finder finder = JSON.parseObject(request, RequestParameters.class).getData();
+>>>>>>> 6726497bc8b42a17bb44cbf5e0d58416139fdeb6
             String vin = data.getData().getVin();
             String serviceType = data.getData().getType();
             if(vin==null||"".equals(vin)){
