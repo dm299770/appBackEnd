@@ -2,7 +2,6 @@ package com.xxx.demo.controller.vehiclestate;
 
 import com.alibaba.fastjson.JSONObject;
 import com.xxx.demo.jsonBean.remote.RequestParameters;
-import com.xxx.demo.jsonBean.remote.remoteRequestParmmeter.DeleteDataRequestParameter;
 import com.xxx.demo.jsonBean.vehiclestate.VehicleState;
 import com.xxx.demo.services.finder.FinderService;
 import com.xxx.demo.services.vehicleState.VehicleStateService;
@@ -31,20 +30,6 @@ public class VehicleStateController {
         JSONObject result=null;
         try {
             result = vehicleStateService.vehiclestate(data);
-        } catch (Exception e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        return result;
-    }
-
-
-    @ResponseBody
-    @RequestMapping(value = "deletedata")
-    public Object deletedata(@RequestBody DeleteDataRequestParameter data) {
-        JSONObject result=null;
-        try {
-            result = vehicleStateService.deletedata(data);
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
